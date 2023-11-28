@@ -20,7 +20,7 @@ main * {
     align-items: center;
 }
 
-.flex-ctr  {
+.flex-ctr {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@ button {
     color: black;
     border: 1vmin solid black;
     border-radius: 4vmin;
-    font: 4vmin
+    font: 4vmin;
     outline: none;
 }
 
@@ -50,4 +50,4 @@ button:hover {
     color: white;
 }
 
-/* eventually we will have a countdown, we will style that later */
+/* eventually we'll have a countdown, we'll style that later */
