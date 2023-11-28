@@ -133,7 +133,15 @@ function render() {
 // getRandom function for our computer player to select a move
 
 // handleChoice -> for the player to select a move(this will be an event listener)
+function handleChoice(evt) {
+    if (evt.target.tagName !== 'BUTTON') {return}
+    console.log('this is what was clicked: ', evt.target.tagName)
+    results.p = evt.target.innerText.toLowerCase()
+
+    render()
+}
 
 // need a getWinner function -> determine who wins, player, computer or a tie
 
 /*------ event listeners ------*/
+document.querySelector('main').addEventListener('click', handleChoice)
